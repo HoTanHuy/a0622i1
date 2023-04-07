@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="row">
+    <div class="col-md-10 container-fluid">
+        <br>
+        <center>
+            <h1 class="font-text-footer">Create Service</h1>
+            <br>
+            <div class="container-fluid p-0">
+                <form>
+
+                    <div class="input-group mb-3">
+
+                        <input hidden type="text" class="form-control me-2" placeholder="Id" >
+
+                        <span class="input-group-text">Name</span>
+                        <input type="text" class="form-control me-2" placeholder="Name">
+                    </div>
+
+
+                    <div class="input-group mb-3">
+
+                        <span class="input-group-text">Area</span>
+                        <input type="number" class="form-control me-2" placeholder="Area">
+
+                        <span class="input-group-text">Floor</span>
+                        <input type="number" class="form-control me-2" placeholder="Floor">
+
+                        <span class="input-group-text">Maximum number of people</span>
+                        <input type="text" class="form-control me-2" placeholder="Number">
+
+                    </div>
+
+                    <div class="input-group mb3">
+                        <span class="input-group-text">Rental costs</span>
+                        <input type="text" class="form-control me-2" placeholder="Rental costs">
+
+                        <span class="input-group-text">Type</span>
+                        <select  class="me-2">
+                            <div >
+                                <option value="">Choose</option>
+                                <div >
+                                    <option ></option>
+                                </div>
+                            </div>
+                        </select>
+
+                        <span class="input-group-text">Status</span>
+                        <select  class="me-2">
+                            <div >
+                                <option value="">Choose</option>
+                                <div >
+                                    <option>Empty</option>
+                                    <option>Full</option>
+                                </div>
+                            </div>
+                        </select>
+
+
+                    </div>
+
+                    <br>
+                    <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-primary">Create Service</button>
+                        <button type="button" class="btn btn-secondary ms-3">
+                            <a style="text-decoration: none" class="text-light">
+                                Back to list service</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </center>
+    </div>
+</div>
+</body>
+</html>

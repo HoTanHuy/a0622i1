@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Produce</title>
+    <link rel="stylesheet" href="/static/template/bootstrap/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+
+<!--+++++++++content++++++++-->
+<div class="container-fluid">
+    <div class="row">
+        <div th:replace="~{layout/sidebar.html}"></div>
+        <div class="col-md-10">
+            <br>
+            <center>
+                <h1 class="font-text-footer">Edit Build</h1>
+                <div th:if="${mess !=null}">
+                    <h2 class="text-danger" th:text="${mess}"></h2>
+                </div>
+                <br>
+                <div class="container-fluid p-0">
+                    <form th:action="@{/edit.html}" method="post" th:object="${build}">
+
+
+                        <div>
+                            <span class="text-danger" th:if="${#fields.hasErrors('productType')}" th:errors="*{productType}">
+                                Name Error
+                            </span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Loại sản phẩm</span>
+                            <select class="me-2" th:field="*{productType}">
+                                <option value="">Chọn</option>
+                                <div th:each="productType : ${productTypeList}">
+                                    <option th:value="${productType.productTypeId}" th:text="${productType.productTypeName}"></option>
+                                </div>
+                            </select>
+                        </div>
+
+                        <div>
+                            <span class="text-danger" th:if="${#fields.hasErrors('product')}" th:errors="*{product}">
+                                Name Error
+                            </span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Tên sản phẩm</span>
+                            <select class="me-2" th:field="*{product}">
+                                <option value="">Chọn</option>
+                                <div th:each="product : ${productList}">
+                                    <option th:value="${product.productId}" th:text="${product.productName}"></option>
+                                </div>
+                            </select>
+                        </div>
+
+                        <!-- Error -->
+                        <div>
+                            <span class="text-danger" th:if="${#fields.hasErrors('date')}" th:errors="*{date}">
+                                Name Error
+                            </span>
+                        </div>
+
+                        <div class="input-group me-3">
+                            <span class="input-group-text">Ngày giao mua</span>
+                            <input type="date" class="form-control me-2" placeholder="Ngày giao dịch" th:field="*{date}"
+                                   th:value="*{date}">
+                        </div>
+
+
+                        <!-- Error -->
+                        <div>
+                            <span class="text-danger" th:if="${#fields.hasErrors('quantily')}" th:errors="*{quantily}">
+                                Name Error
+                            </span>
+                        </div>
+
+                        <div class="input-group me-3">
+                            <span class="input-group-text">Số Lượng</span>
+                            <input type="date" class="form-control me-2" placeholder="Ngày giao dịch" th:field="*{quantily}"
+                                   th:value="*{quantily}">
+                        </div>
+
+                        <br>
+                        <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+                            <button type="submit" class="btn btn-primary">Edit service</button>
+                            <button type="button" class="btn btn-secondary ms-3">
+                                <a th:href="@{/list}" style="text-decoration: none" class="text-light">
+                                    Back to list service</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </center>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script src="/static/template/bootstrap/jquery-3.6.0.min.js"></script>
+<script src="/static/template/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
