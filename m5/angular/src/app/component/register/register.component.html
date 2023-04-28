@@ -1,0 +1,78 @@
+<h1>Register</h1>
+<form novalidate [formGroup]="rfRegister">
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      class="form-control" id="email" formControlName="email">
+    <p *ngIf="rfRegister.controls.email.touched && rfRegister.controls.email?.errors?.required" class="text-danger">
+      Không được để trống</p>
+    <p *ngIf="rfRegister.controls.email.touched && rfRegister.controls.email?.errors?.email" class="text-danger">Không
+      đúng định dạng</p>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password" #password
+      class="form-control" id="password" formControlName="password">
+    <p *ngIf="rfRegister.controls.password.touched && rfRegister.controls.password?.errors?.required"
+       class="text-danger">Không được để trống</p>
+    <p *ngIf="rfRegister.controls.password.touched && rfRegister.controls.password?.errors?.minlength"
+       class="text-danger">Nhiều hơn 6 kí tự</p>
+  </div>
+  <div class="form-group">
+    <label for="confirmPassword">Confirm Password</label>
+    <input
+      type="password" #confirm
+      class="form-control" id="confirmPassword" formControlName="confirmPassword">
+    <p *ngIf="rfRegister.controls.confirmPassword.touched && rfRegister.controls.confirmPassword?.errors?.required"
+       class="text-danger">Không được để trống</p>
+    <p *ngIf="rfRegister.controls.confirmPassword.touched && rfRegister.controls.confirmPassword?.errors?.minlength"
+       class="text-danger">Nhiều hơn 6 kí tự</p>
+    <p *ngIf="rfRegister.controls.confirmPassword.touched && [password.value === confirm.value] " class="text-danger">
+      Không đúng mật khẩu</p>
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <select class="form-select" id="country" formControlName="country">
+      <option>Quảng Nam</option>
+      <option>Đà Nẵng</option>
+      <option>Khác</option>
+    </select>
+    <p *ngIf="rfRegister.controls.country.touched && rfRegister.controls.country?.errors?.required" class="text-danger">
+      Không được để trống</p>
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input
+      type="number"
+      class="form-control" id="age" formControlName="age">
+    <p *ngIf="rfRegister.controls.age.touched && rfRegister.controls.age?.errors?.required" class="text-danger">Không
+      được để trống</p>
+    <p *ngIf="rfRegister.controls.age.touched && rfRegister.controls.age?.errors?.min" class="text-danger">Không đủ
+      18</p>
+  </div>
+  <div class="btn-group" data-bs-toggle="buttons">
+    <label>Gender:</label>
+    <label class="btn">Nam
+      <input type="radio" name="gender" id="boy" autocomplete="on">
+    </label>
+    <label class="btn ">Nữ
+      <input type="radio" name="gender" id="girl" autocomplete="on">
+    </label>
+    <label class="btn ">Khác
+      <input type="radio" name="gender" id="LGBT" autocomplete="on ">
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input
+      type="text"
+      class="form-control" id="phone" formControlName="phone">
+    <p *ngIf="rfRegister.controls.phone.touched && rfRegister.controls.phone?.errors?.required" class="text-danger">
+      Không được để trống</p>
+    <p *ngIf="rfRegister.controls.phone.touched && rfRegister.controls.phone?.errors?.pattern" class="text-danger">Không
+      đúng định dạng</p>
+  </div>
+</form>
+<button type="button" class="btn btn-primary">Create</button>

@@ -1,0 +1,28 @@
+<h1>Calculator</h1>
+<div class="input-group">
+  <label for="number1">Number 1: </label>
+  <input
+    type="number" [(ngModel)]="num1"
+    class="form-control" name="" id="number1">
+</div>
+<div class="input-group">
+  <label for="number2">Number 2: </label>
+  <input
+    type="number" [(ngModel)]="num2"
+    class="form-control" name="" id="number2">
+</div>
+<div class="input-group">
+  <label for="operator"></label>
+  <select class="form-select" [(ngModel)]="operator" id="operator">
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+  </select>
+</div>
+<div class="input-group">
+  <label>Result =</label>
+  <p>{{result}}</p>
+</div>
+
+<button type="button" (click)="calculate()" class="btn btn-dark">Submit</button>

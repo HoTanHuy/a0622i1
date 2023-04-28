@@ -1,0 +1,22 @@
+
+<form novalidate [formGroup]="rfUser">
+  <div class="form-group" >
+    <label for="email">Email</label>
+    <input
+      type="email" #email
+      class="form-control" formControlName="email" id="email">
+    <p *ngIf="rfUser.controls.email.touched && rfUser.controls.email?.errors?.required" class="text-danger">Bắt buộc</p>
+    <p *ngIf="rfUser.controls.email.touched && rfUser.controls.email?.errors?.email" class="text-danger">Không đúng định dạng</p>
+<!--    <p *ngIf="rfUser.controls.email.touched && [email.value === this.user.email]" class="text-danger">Email không tồn tại</p>-->
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password" #password
+      class="form-control" formControlName="password" id="password">
+    <p *ngIf="rfUser.controls.password.touched && rfUser.controls.password?.errors?.required" class="text-danger">Bắt buộc</p>
+    <p *ngIf="rfUser.controls.password.touched && rfUser.controls.password?.errors?.minlength" class="text-danger">Mật khẩu 6 kí tự</p>
+<!--    <p *ngIf="rfUser.controls.password.touched && [password.value === this.user.password]" class="text-danger">Không đúng mật khẩu</p>-->
+
+  </div>
+</form>
