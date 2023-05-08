@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SongService} from '../../service/song.service';
-import {Song} from '../../interface/song';
+import {SongService} from '../../../../service/song.service';
+import {Song} from '../../../../interface/song';
 
 @Component({
   selector: 'app-youtube-playlist',

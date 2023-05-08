@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {DictionaryService} from '../../../service/dictionary.service';
 
 @Component({
   selector: 'app-dictionary-detail',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DictionaryDetailComponent implements OnInit {
 
-  constructor() { }
+  word: any;
 
-  ngOnInit(): void {
+  constructor(private route: ActivatedRoute, private dictionaryService: DictionaryService) { }
+
+  ngOnInit() {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.word = this.dictionaryService.getWordById(id);
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Article} from '../modole/article';
+import {Article} from '../../../interface/article';
 
 @Component({
   selector: 'app-article',
