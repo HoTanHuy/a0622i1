@@ -1,4 +1,4 @@
-package com.codegym.exam.formatter;
+package com.example.examm4l2.formatter;
 
 import org.springframework.format.Formatter;
 

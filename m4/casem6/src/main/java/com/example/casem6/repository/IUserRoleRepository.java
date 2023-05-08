@@ -1,6 +1,6 @@
-package com.codegym.furama.repository;
+package com.example.casem6.repository;
 
-import com.codegym.furama.model.user.UserRole;
+import com.example.casem6.model.user.UserRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

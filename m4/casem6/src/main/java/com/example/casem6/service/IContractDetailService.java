@@ -1,7 +1,6 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
-
-import com.codegym.furama.model.contract.ContractDetail;
+import com.example.casem6.model.contract.ContractDetail;
 
 import java.util.List;
 

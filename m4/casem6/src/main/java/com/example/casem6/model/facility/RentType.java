@@ -1,4 +1,4 @@
-package com.codegym.furama.model.facility;
+package com.example.casem6.model.facility;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 

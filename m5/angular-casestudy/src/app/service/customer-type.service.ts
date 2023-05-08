@@ -8,13 +8,13 @@ import {Observable} from 'rxjs';
 })
 export class CustomerTypeService {
 
-  readonly URI: string = 'http://localhost:3000/customer-types'
+  readonly URI: string = 'http://localhost:3000/customer-types';
 
   constructor(private httpClient: HttpClient) {
   }
 
   getAllCustomerType(): Observable<ICustomerType[]> {
-    return this.httpClient.get<ICustomerType[]>(this.URI)
+    return this.httpClient.get<ICustomerType[]>(this.URI);
   }
 
   findByIdCustomerType(id: string): Observable<ICustomerType> {

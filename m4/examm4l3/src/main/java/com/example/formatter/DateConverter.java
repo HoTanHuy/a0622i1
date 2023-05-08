@@ -1,4 +1,4 @@
-package com.example.examm4l2.formatter;
+package com.example.formatter;
 
 import org.springframework.core.convert.converter.Converter;
 

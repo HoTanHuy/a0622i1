@@ -1,4 +1,4 @@
-package com.example.examm4l2.controller;
+package com.example.examm4l3.controller;
 
 import com.example.examm4l2.model.Build;
 import com.example.examm4l2.model.Product;
@@ -12,11 +12,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.validation.Valid;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;

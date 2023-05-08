@@ -1,8 +1,9 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
-import com.codegym.furama.model.employee.Employee;
-import com.codegym.furama.repository.IEmployeeRepository;
-import com.codegym.furama.service.IEmployeeService;
+
+import com.example.casem6.model.employee.Employee;
+import com.example.casem6.repository.IEmployeeRepository;
+import com.example.casem6.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

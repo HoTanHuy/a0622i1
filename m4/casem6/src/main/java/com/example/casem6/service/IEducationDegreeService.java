@@ -1,7 +1,7 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
 
-import com.codegym.furama.model.employee.EducationDegree;
+import com.example.casem6.model.employee.EducationDegree;
 
 import java.util.List;
 

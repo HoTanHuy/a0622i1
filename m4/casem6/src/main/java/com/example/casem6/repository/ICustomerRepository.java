@@ -1,7 +1,7 @@
-package com.codegym.furama.repository;
+package com.example.casem6.repository;
 
 
-import com.codegym.furama.model.cutomer.Customer;
+import com.example.casem6.model.cutomer.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

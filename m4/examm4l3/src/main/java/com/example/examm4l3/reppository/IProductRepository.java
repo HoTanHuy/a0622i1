@@ -1,4 +1,4 @@
-package com.example.examm4l2.reppository;
+package com.example.examm4l3.reppository;
 
 import com.example.examm4l2.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;

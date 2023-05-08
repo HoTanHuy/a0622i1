@@ -1,4 +1,4 @@
-package com.codegym.furama.formatter;
+package com.example.casem6.formatter;
 
 import org.springframework.core.convert.converter.Converter;
 

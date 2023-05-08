@@ -1,6 +1,6 @@
-package com.codegym.furama.model.cutomer;
+package com.example.casem6.model.cutomer;
 
-import com.codegym.furama.model.contract.Contract;
+import com.example.casem6.model.contract.Contract;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -19,7 +19,7 @@ public class Customer {
     @GeneratedValue(generator = "prod-generator")
     @GenericGenerator(name = "prod-generator",
             parameters = @org.hibernate.annotations.Parameter(name = "prefix", value = "KH"),
-            strategy = "com.codegym.furama.model.MyGenerator")
+            strategy = "com.example.casem6.model.MyGenerator")
     @Column(length = 45)
     private String customerId;
 

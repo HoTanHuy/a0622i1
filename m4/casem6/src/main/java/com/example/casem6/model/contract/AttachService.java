@@ -1,4 +1,4 @@
-package com.codegym.furama.model.contract;
+package com.example.casem6.model.contract;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 

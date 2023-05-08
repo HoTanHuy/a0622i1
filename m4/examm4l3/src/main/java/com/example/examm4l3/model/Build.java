@@ -1,9 +1,8 @@
-package com.example.examm4l2.model;
+package com.example.examm4l3.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Entity

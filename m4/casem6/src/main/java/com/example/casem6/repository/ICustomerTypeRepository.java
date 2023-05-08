@@ -1,7 +1,7 @@
-package com.codegym.furama.repository;
+package com.example.casem6.repository;
 
 
-import com.codegym.furama.model.cutomer.CustomerType;
+import com.example.casem6.model.cutomer.CustomerType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

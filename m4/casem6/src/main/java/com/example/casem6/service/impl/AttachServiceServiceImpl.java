@@ -1,9 +1,9 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
 
-import com.codegym.furama.model.contract.AttachService;
-import com.codegym.furama.repository.IAttachServiceRepository;
-import com.codegym.furama.service.IAttachServiceService;
+import com.example.casem6.model.contract.AttachService;
+import com.example.casem6.repository.IAttachServiceRepository;
+import com.example.casem6.service.IAttachServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

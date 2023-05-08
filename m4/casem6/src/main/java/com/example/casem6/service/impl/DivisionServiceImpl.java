@@ -1,9 +1,8 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
-
-import com.codegym.furama.model.employee.Division;
-import com.codegym.furama.repository.IDivisionRepository;
-import com.codegym.furama.service.IDivisionService;
+import com.example.casem6.model.employee.Division;
+import com.example.casem6.repository.IDivisionRepository;
+import com.example.casem6.service.IDivisionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

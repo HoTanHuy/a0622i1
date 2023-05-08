@@ -1,4 +1,4 @@
-package com.codegym.furama.model.user;
+package com.example.casem6.model.user;
 
 import javax.persistence.*;
 

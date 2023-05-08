@@ -1,9 +1,8 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
-
-import com.codegym.furama.model.employee.EducationDegree;
-import com.codegym.furama.repository.IEducationDegreeRepository;
-import com.codegym.furama.service.IEducationDegreeService;
+import com.example.casem6.model.employee.EducationDegree;
+import com.example.casem6.repository.IEducationDegreeRepository;
+import com.example.casem6.service.IEducationDegreeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

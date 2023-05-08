@@ -1,6 +1,6 @@
-package com.codegym.exam.config;
+package com.example.examm4l2.config;
 
-import com.codegym.exam.formatter.DateFomatter;
+import com.example.examm4l2.formatter.DateFomatter;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

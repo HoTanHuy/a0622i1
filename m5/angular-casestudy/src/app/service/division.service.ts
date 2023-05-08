@@ -8,7 +8,7 @@ import {IDivision} from '../model/idivision';
 })
 export class DivisionService {
 
-  readonly URI: string = 'http://localhost:3000/divisions'
+  readonly URI: string = 'http://localhost:3000/divisions';
 
   constructor(private httpClient: HttpClient) {
   }

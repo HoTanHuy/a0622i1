@@ -1,6 +1,7 @@
-package com.codegym.furama.model.user;
+package com.example.casem6.model.user;
 
-import com.codegym.furama.model.employee.Employee;
+
+import com.example.casem6.model.employee.Employee;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;

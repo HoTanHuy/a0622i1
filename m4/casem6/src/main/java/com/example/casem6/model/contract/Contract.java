@@ -1,8 +1,8 @@
-package com.codegym.furama.model.contract;
+package com.example.casem6.model.contract;
 
-import com.codegym.furama.model.cutomer.Customer;
-import com.codegym.furama.model.employee.Employee;
-import com.codegym.furama.model.facility.Service;
+import com.example.casem6.model.cutomer.Customer;
+import com.example.casem6.model.employee.Employee;
+import com.example.casem6.model.facility.Service;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;

@@ -1,6 +1,6 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
-import com.codegym.furama.model.contract.Contract;
+import com.example.casem6.model.contract.Contract;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

@@ -1,9 +1,8 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
-
-import com.codegym.furama.model.contract.ContractDetail;
-import com.codegym.furama.repository.IContractDetailRepository;
-import com.codegym.furama.service.IContractDetailService;
+import com.example.casem6.model.contract.ContractDetail;
+import com.example.casem6.repository.IContractDetailRepository;
+import com.example.casem6.service.IContractDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

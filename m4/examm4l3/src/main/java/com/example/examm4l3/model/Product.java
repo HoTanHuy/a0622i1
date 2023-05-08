@@ -1,9 +1,6 @@
-package com.example.examm4l2.model;
-
-import org.springframework.lang.NonNull;
+package com.example.examm4l3.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 
 @Entity
 public class Product {

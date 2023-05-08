@@ -1,7 +1,9 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
 
-import com.codegym.furama.model.cutomer.CustomerType;
+
+
+import com.example.casem6.model.cutomer.CustomerType;
 
 import java.util.List;
 

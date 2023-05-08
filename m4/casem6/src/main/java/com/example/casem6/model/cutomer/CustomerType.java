@@ -1,4 +1,4 @@
-package com.codegym.furama.model.cutomer;
+package com.example.casem6.model.cutomer;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 

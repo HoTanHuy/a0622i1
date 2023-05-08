@@ -1,14 +1,13 @@
-package com.codegym.furama.controller;
+package com.example.casem6.controller;
 
-
-import com.codegym.furama.model.employee.Division;
-import com.codegym.furama.model.employee.EducationDegree;
-import com.codegym.furama.model.employee.Employee;
-import com.codegym.furama.model.employee.Position;
-import com.codegym.furama.service.IDivisionService;
-import com.codegym.furama.service.IEducationDegreeService;
-import com.codegym.furama.service.IEmployeeService;
-import com.codegym.furama.service.IPositionService;
+import com.example.casem6.model.employee.Division;
+import com.example.casem6.model.employee.EducationDegree;
+import com.example.casem6.model.employee.Employee;
+import com.example.casem6.model.employee.Position;
+import com.example.casem6.service.IDivisionService;
+import com.example.casem6.service.IEducationDegreeService;
+import com.example.casem6.service.IEmployeeService;
+import com.example.casem6.service.IPositionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

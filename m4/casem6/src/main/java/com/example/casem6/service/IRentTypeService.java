@@ -1,6 +1,6 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
-import com.codegym.furama.model.facility.RentType;
+import com.example.casem6.model.facility.RentType;
 
 import java.util.List;
 

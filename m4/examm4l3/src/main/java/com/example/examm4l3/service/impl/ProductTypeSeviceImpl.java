@@ -1,4 +1,4 @@
-package com.example.examm4l2.service.impl;
+package com.example.examm4l3.service.impl;
 
 import com.example.examm4l2.model.ProductType;
 import com.example.examm4l2.reppository.IProductTypeRepository;

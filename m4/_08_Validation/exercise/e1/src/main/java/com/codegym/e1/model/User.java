@@ -7,23 +7,23 @@ import javax.persistence.*;
 import javax.validation.constraints.*;
 
 @Entity
-public class User  {
+public class    User  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotBlank
-    @Size(max = 45,min = 5,message = "Size not match")
+    @Size(max = 45,min = 2,message = "Size not match")
     @Column(name = "first_name")
     private String firstName;
 
     @NotBlank
-    @Size(max = 45,min = 5,message = "Size not match")
+    @Size(max = 45,min = 2,message = "Size not match")
     @Column(name = "last_name")
     private String lastName;
 
-    @Pattern(regexp = "^(\\\\+84|0)\\\\d{9}$", message = "Phone number is not exist")
+    @Pattern(regexp = "^((84)|0)[35789]([0-9]{8})$", message = "Phone number is not exist")
     private String phone;
 
     @Min(value = 18, message = "you large than 18 year old")

@@ -1,6 +1,6 @@
-package com.codegym.furama.model.employee;
+package com.example.casem6.model.employee;
 
-import  com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
 import java.util.List;

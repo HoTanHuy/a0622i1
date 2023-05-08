@@ -1,4 +1,4 @@
-package com.codegym.furama.model;
+package com.example.casem6.model;
 
 import org.hibernate.HibernateException;
 import org.hibernate.MappingException;

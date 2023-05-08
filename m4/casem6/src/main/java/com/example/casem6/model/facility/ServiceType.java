@@ -1,6 +1,5 @@
-package com.codegym.furama.model.facility;
+package com.example.casem6.model.facility;
 
-import com.codegym.furama.model.facility.Service;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;

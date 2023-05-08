@@ -1,8 +1,8 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
-import com.codegym.furama.model.employee.Position;
-import com.codegym.furama.repository.IPositionRepository;
-import com.codegym.furama.service.IPositionService;
+import com.example.casem6.model.employee.Position;
+import com.example.casem6.repository.IPositionRepository;
+import com.example.casem6.service.IPositionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

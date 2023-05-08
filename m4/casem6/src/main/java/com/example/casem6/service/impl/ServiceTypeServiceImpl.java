@@ -1,9 +1,8 @@
-package com.codegym.furama.service.impl;
+package com.example.casem6.service.impl;
 
-
-import com.codegym.furama.model.facility.ServiceType;
-import com.codegym.furama.repository.IServiceTypeRepository;
-import com.codegym.furama.service.IServiceTypeService;
+import com.example.casem6.model.facility.ServiceType;
+import com.example.casem6.repository.IServiceTypeRepository;
+import com.example.casem6.service.IServiceTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

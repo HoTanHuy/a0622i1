@@ -1,7 +1,8 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
 
-import com.codegym.furama.model.contract.AttachService;
+
+import com.example.casem6.model.contract.AttachService;
 
 import java.util.List;
 

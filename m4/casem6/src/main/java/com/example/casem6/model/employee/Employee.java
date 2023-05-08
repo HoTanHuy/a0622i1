@@ -1,7 +1,8 @@
-package com.codegym.furama.model.employee;
+package com.example.casem6.model.employee;
 
-import com.codegym.furama.model.contract.Contract;
-import com.codegym.furama.model.user.User;
+
+import com.example.casem6.model.contract.Contract;
+import com.example.casem6.model.user.User;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.springframework.format.annotation.DateTimeFormat;
 

@@ -1,4 +1,4 @@
-package com.example.examm4l2.config;
+package com.example.examm4l3.config;
 
 import com.example.examm4l2.formatter.DateFomatter;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,8 @@
-package com.codegym.furama.service;
+package com.example.casem6.service;
 
 
-import com.codegym.furama.model.cutomer.Customer;
+
+import com.example.casem6.model.cutomer.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
